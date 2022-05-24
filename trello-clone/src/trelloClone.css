@@ -1,0 +1,124 @@
+
+  body {
+    background: linear-gradient(270deg, rgba(35, 90, 166, .9), rgba(16, 27, 59, .9));
+
+  }
+
+  .AppTitle {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 3px 5px 2px #333;
+  }
+  
+  .AppWorkSpace {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0 20px;
+    margin-top: 40px;
+  }
+  
+  .AppColumn {
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+  
+  .AppColumn h1 {
+    padding: 10px;
+    color: black !important;
+  }
+  
+  .AppTask {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgb(51, 102, 189);
+    padding: 10px 25px;
+    margin: 10px auto;
+    cursor: pointer;
+    position: relative;
+    max-width: 300px;
+    word-break: break-all;
+  }
+  
+  .AppTaskList {
+    padding: 10px;
+  }
+  
+  .AppTask.off {
+    text-decoration: line-through;
+    opacity: 0.6;
+    box-shadow: none;
+  }
+  
+  .AppForm {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .AppForm input {
+    border: 1px dashed #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .AppForm input:focus {
+    border-style: solid;
+  }
+  
+  .AppButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .AppButtons span svg {
+    font-size: 30px;
+  }
+  
+  .btnMove {
+    cursor: pointer;
+    color: white;
+    background-color: goldenrod;
+    border-radius: 5px 0px 5px 0px;
+  }
+  
+  .btnDelete {
+    border-radius: 0px 5px 0px 5px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+  }
+  
+  .newColumn {
+    padding-bottom: 10px;
+  }
+  
+  .AppForm .icon {
+    color: rgb(51, 102, 189);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(51, 102, 189);
+    margin-left: 5px;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .AppWorkSpace {
+      flex-direction: column !important;
+    }
+    .AppTrelloClone {
+      height: unset;
+    }
+  }

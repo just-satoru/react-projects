@@ -1,0 +1,55 @@
+.home {
+    display: flex;
+
+    .homeContainer {
+        flex: 6;
+        padding-top: 40px;
+
+        .widgets, .charts {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .charts {
+            padding: 5px 20px;
+        }
+
+        .listContainer {
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            margin: 20px;
+
+            .listTitle {
+                font-weight: 500;
+                color: gray;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .home {
+        flex-direction: column;
+    }
+    .widgets, .charts {
+        flex-direction: column;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .new {
+        flex-direction: column;
+    }
+
+    .new .newContainer .top, .new .newContainer .bottom {
+        flex-direction: column;
+    }
+
+    .single {
+        flex-direction: column;
+    }
+  }
